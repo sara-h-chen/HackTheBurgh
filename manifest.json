@@ -1,0 +1,16 @@
+
+	"manifest_version": 2,
+	"name": "Goggle Accessibility Extension",
+	"description": "This extension serves as a tool for both developers and users with vision difficulties",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html",
+		"default_title": "Goggle Mode"
+	},
+	"permissions": [
+		"activeTab",
+		"https://ajax.googleapis.com/"
+	]
+}
