@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Speak Selection atom-accessibility-package'
+      'command': 'atom-accessibility-package:SpeakSelection'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atom-accessibility-package'
+      'submenu': [
+        {
+          'label': 'Speak Selection'
+          'command': 'atom-accessibility-package:SpeakSelection'
+        }
+      ]
+    ]
+  }
+]
