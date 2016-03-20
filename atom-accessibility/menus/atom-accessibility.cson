@@ -1,0 +1,30 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Speak Selection atom-accessibility'
+      'command': 'atom-accessibility:SpeakSelection'
+    }
+    {
+      'label': 'Magnify Selection atom-accessibility'
+      'command': 'atom-accessibility:Magnify'
+    }
+    {
+      'label': 'Stop Dictation atom-accessibility'
+      'command': 'atom-accessibility:ShutUp'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atom-accessibility'
+      'submenu': [
+        {
+          'label': 'Speak Selection'
+          'command': 'atom-accessibility:SpeakSelection'
+        }
+      ]
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "name": "atom-accessibility",
+  "main": "./lib/atom-accessibility",
+  "version": "0.0.2",
+  "description": "Accessibility options for the Atom editor",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-accessibility:SpeakSelection",
+    "atom-workspace": "atom-accessibility:Magnify"
+  },
+  "repository": "https://github.com/atom/atom-accessibility",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
