@@ -9,6 +9,7 @@ module.exports =
 
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace', 'atom-accessibility-package:SpeakSelection': => @SpeakSelection()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-accessibility-package:Magnify': => @Magnify()
 
   deactivate: ->
     @atomAccessibilityPackageView.destroy()
@@ -29,3 +30,9 @@ module.exports =
       utterance.rate = 1
       utterance.voice = voices[0]
       speechSynthesiser.speak(utterance)
+
+  Magnify: ->
+    if editor = atom.workspace.getActiveTextEditor()
+      selection = editor.getSelectedText()
+      manager = new NotficationManager();
+      atom.notifications.addInfo("selection");

@@ -1,0 +1,18 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.atom-css-access {
+  foo {
+    display: none;
+  }
+
+  a:hover + foo {
+    display: block;
+    color: blue;
+    height: 50px;
+    width: 50px;
+  }
+}

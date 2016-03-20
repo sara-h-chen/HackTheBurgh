@@ -15,6 +15,12 @@ chrome.browserAction.onClicked.addListener(function() {
       if (tabId != targetId || changedProps.status != "complete")
         return;
 
+      /**
+      chrome.tabs.insertCSS(tab.id, {
+        file: "css/magnify.css"
+      })
+      **/
+
       // Passing the above test means this is the event we were waiting for.
       // There is nothing we need to do for future onUpdated events, so we
       // use removeListner to stop getting called when onUpdated events fire.
@@ -33,9 +39,17 @@ chrome.browserAction.onClicked.addListener(function() {
         }
       }
     });
-
+    /**
+    chrome.add.insertCSS(tab.id, {
+      file: "css/magnify.css"
+    })
+    **/
     chrome.tabs.create({url: viewTabUrl}, function(tab) {
       targetId = tab.id;
+      chrome.tabs.executeScript(null, {file: "magnifier.js"});
+      //chrome.add.insertCSS(targetId, {
+      //  file: "css/magnifier.css"
+      //})
     });
   });
 });

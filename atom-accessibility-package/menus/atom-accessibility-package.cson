@@ -4,6 +4,10 @@
     {
       'label': 'Speak Selection atom-accessibility-package'
       'command': 'atom-accessibility-package:SpeakSelection'
+    },
+    {
+      'label': 'Magnify'
+      'command': 'atom-accessibility-package:Magnify'
     }
   ]
 'menu': [
@@ -15,6 +19,10 @@
         {
           'label': 'Speak Selection'
           'command': 'atom-accessibility-package:SpeakSelection'
+        },
+        {
+          'label': 'Magnify'
+          'command': 'atom-accessibility-package:Magnify'
         }
       ]
     ]
