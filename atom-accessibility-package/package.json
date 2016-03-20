@@ -1,14 +1,14 @@
 {
   "name": "atom-accessibility-package",
   "main": "./lib/atom-accessibility-package",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "version": "0.0.1",
+  "description": "An accessability extension for Atom. Provides text to speech functionality.",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "atom-accessibility-package:SpeakSelection"
   },
-  "repository": "https://github.com/atom/atom-accessibility-package",
+  "repository": "https://github.com/sara-h-chen/HackTheBurgh/tree/master/atom-accessibility-package",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
